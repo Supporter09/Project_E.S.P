@@ -6459,3 +6459,9 @@ td.rdtYear:hover {
   border-bottom-color: #fff; }
 
 /*# sourceMappingURL=paper-kit.css.map */
+
+/* Tự làm */
+.icon-dict{
+  object-fit: cover;
+  background-image: url(../img/bla/pic/book.jpg);
+}

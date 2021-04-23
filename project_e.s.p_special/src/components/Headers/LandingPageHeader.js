@@ -58,7 +58,7 @@ function LandingPageHeader() {
             <h1>An endangered species is a species that is very likely to become extinct in the near future.</h1>
             <h3>Start exploring red animals in your area right now.</h3>
             <br />
-            <Button
+            {/* <Button
               href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
               className="btn-round mr-1"
               color="neutral"
@@ -67,9 +67,9 @@ function LandingPageHeader() {
             >
               <i className="fa fa-play" />
               Watch video
-            </Button>
+            </Button> */}
             <Button className="btn-round" color="neutral" type="button" outline>
-              Download
+              Tìm hiểu thêm
             </Button>
           </div>
         </Container>
