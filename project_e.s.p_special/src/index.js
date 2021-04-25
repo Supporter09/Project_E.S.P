@@ -6,6 +6,9 @@ import { BrowserRouter, Route, Redirect, Switch } from "react-router-dom";
 import "bootstrap/scss/bootstrap.scss";
 import "assets/scss/paper-kit.scss?v=1.3.0";
 import "assets/demo/demo.css?v=1.3.0";
+
+// styles nhưng mà tự làm 
+
 // pages
 import Index from "views/Index.js";
 import NucleoIcons from "views/NucleoIcons.js";
@@ -13,6 +16,12 @@ import LandingPage from "views/examples/LandingPage.js";
 import ProfilePage from "views/examples/ProfilePage.js";
 import RegisterPage from "views/examples/RegisterPage.js";
 import AnimalDictionary from "views/examples/AnimalDictionary.js";
+
+// pages tự làm 
+
+// pages nhưng mà tự làm 
+
+
 // others
 
 ReactDOM.render(

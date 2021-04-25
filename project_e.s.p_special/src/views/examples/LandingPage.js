@@ -54,9 +54,9 @@ function LandingPage() {
       <ExamplesNavbar />
       <LandingPageHeader />
       <div className="main">
-        <div className="section text-center">
-          <Container>
-            <Row>
+        <div className="section text-center" style={{display:"flex"}}>
+          <Container >
+            {/* <Row>
               <Col className="ml-auto mr-auto" md="8">
                 <h2 className="title">Let's talk product</h2>
                 <h5 className="description">
@@ -76,17 +76,17 @@ function LandingPage() {
                   See Details
                 </Button>
               </Col>
-            </Row>
+            </Row> */}
             <br />
             <br />
-            <Row>
+            <Row style={{justifyContent:"space-around"}}>
               <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-album-2" />
+                    <i className="nc-icon nc-album-2 " style={{fontSize:70}} />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Beautiful Gallery</h4>
+                    <h4 className="info-title" style={{marginTop:10}}>Species Dictionary</h4>
                     <p className="description">
                       Spend your time generating new ideas. You don't have to
                       think of implementing.
@@ -97,7 +97,7 @@ function LandingPage() {
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              {/* <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-bulb-63" />
@@ -113,14 +113,14 @@ function LandingPage() {
                     </Button>
                   </div>
                 </div>
-              </Col>
+              </Col> */}
               <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
-                    <i className="nc-icon nc-chart-bar-32" />
+                    <i className="nc-icon nc-chart-bar-32" style={{fontSize:70}} />
                   </div>
                   <div className="description">
-                    <h4 className="info-title">Statistics</h4>
+                    <h4 className="info-title" style={{marginTop:10}}>Radar</h4>
                     <p>
                       Choose from a veriety of many colors resembling sugar
                       paper pastels.
@@ -131,7 +131,7 @@ function LandingPage() {
                   </div>
                 </div>
               </Col>
-              <Col md="3">
+              {/* <Col md="3">
                 <div className="info">
                   <div className="icon icon-info">
                     <i className="nc-icon nc-sun-fog-29" />
@@ -147,15 +147,18 @@ function LandingPage() {
                     </Button>
                   </div>
                 </div>
-              </Col>
+              </Col> */}
             </Row>
           </Container>
         </div>
+
+{/* About us */}
+
         <div className="section section-dark text-center">
           <Container>
             <h2 className="title">Let's talk about us</h2>
             <Row>
-              <Col md="4">
+              <Col md="3">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -171,7 +174,7 @@ function LandingPage() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Henry Ford</CardTitle>
+                        <CardTitle tag="h4">Mai Văn Nhật Minh</CardTitle>
                         <h6 className="card-category">Product Manager</h6>
                       </div>
                     </a>
@@ -209,7 +212,61 @@ function LandingPage() {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col md="4">
+              <Col md="3">
+                <Card className="card-profile card-plain">
+                  <div className="card-avatar">
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <img
+                        alt="..."
+                        src={
+                          require("assets/img/faces/clem-onojeghuo-3.jpg")
+                            .default
+                        }
+                      />
+                    </a>
+                  </div>
+                  <CardBody>
+                    <a href="#pablo" onClick={(e) => e.preventDefault()}>
+                      <div className="author">
+                        <CardTitle tag="h4">Nguyễn Nam Nghĩa</CardTitle>
+                        <h6 className="card-category">Product Manager</h6>
+                      </div>
+                    </a>
+                    <p className="card-description text-center">
+                      Teamwork is so important that it is virtually impossible
+                      for you to reach the heights of your capabilities or make
+                      the money that you want without becoming very good at it.
+                    </p>
+                  </CardBody>
+                  <CardFooter className="text-center">
+                    <Button
+                      className="btn-just-icon btn-neutral"
+                      color="link"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-twitter" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon btn-neutral ml-1"
+                      color="link"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-google-plus" />
+                    </Button>
+                    <Button
+                      className="btn-just-icon btn-neutral ml-1"
+                      color="link"
+                      href="#pablo"
+                      onClick={(e) => e.preventDefault()}
+                    >
+                      <i className="fa fa-linkedin" />
+                    </Button>
+                  </CardFooter>
+                </Card>
+              </Col>
+              <Col md="3">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -224,7 +281,7 @@ function LandingPage() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Sophie West</CardTitle>
+                        <CardTitle tag="h4">Phùng Văn Tùng</CardTitle>
                         <h6 className="card-category">Designer</h6>
                       </div>
                     </a>
@@ -263,7 +320,7 @@ function LandingPage() {
                   </CardFooter>
                 </Card>
               </Col>
-              <Col md="4">
+              <Col md="3">
                 <Card className="card-profile card-plain">
                   <div className="card-avatar">
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
@@ -279,7 +336,7 @@ function LandingPage() {
                   <CardBody>
                     <a href="#pablo" onClick={(e) => e.preventDefault()}>
                       <div className="author">
-                        <CardTitle tag="h4">Robert Orben</CardTitle>
+                        <CardTitle tag="h4">Đỗ Vũ Minh Quang</CardTitle>
                         <h6 className="card-category">Developer</h6>
                       </div>
                     </a>
@@ -321,6 +378,9 @@ function LandingPage() {
             </Row>
           </Container>
         </div>
+
+{/* phần feedback */}
+
         <div className="section landing-section">
           <Container>
             <Row>
