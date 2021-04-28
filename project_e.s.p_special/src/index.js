@@ -22,7 +22,8 @@ import AnimalDictionary from "views/examples/AnimalDictionary.js";
 // pages nhưng mà tự làm 
 
 
-// others
+// others 
+
 
 ReactDOM.render(
   <BrowserRouter>

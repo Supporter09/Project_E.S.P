@@ -27,6 +27,7 @@ import LandingPageHeader from "components/Headers/LandingPageHeader.js";
 import DictionaryHeader from "components/Headers/DictionaryHeader.js"
 import DemoFooter from "components/Footers/DemoFooter.js";
 import SectionCarousel from "../index-sections/SectionCarousel";
+import SpeciesCardDeck from "../../components/Cards/SpeciesCardDeck.js"
 
 function AnimalDictionary() {
   document.documentElement.classList.remove("nav-open");
@@ -45,6 +46,7 @@ function AnimalDictionary() {
       <div className="main">
         <div className="section text-center">
           <Container>
+          <SpeciesCardDeck />
             <Row>
               <Col className="ml-auto mr-auto" md="10">
                 <h2 className="title">Search your animals data here.<i aria-hidden={true} className="nc-icon nc-zoom-split" /></h2>
@@ -52,7 +54,7 @@ function AnimalDictionary() {
               </Col>
               <Col sm="6" md={{ size: 6, offset: 3 }}>
                 <InputGroup>
-                  <Input placeholder="Species" type="text" />
+                  <Input placeholder="Species" className="search_engine" type="text" />
                   <InputGroupAddon addonType="append">
                     <InputGroupText>
                      
@@ -65,7 +67,7 @@ function AnimalDictionary() {
             <br />
             <br />
             <Row>
-            <CardDeck>
+            <CardDeck className="all_species">
               <Card>
                 <CardImg top width="100%" src="https://images.unsplash.com/photo-1544640808-32ca72ac7f37?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80" alt="Card image cap" />
                 <CardBody>
